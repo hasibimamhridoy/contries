@@ -35,9 +35,22 @@ const showAllCountry = (contries) => {
     <h2 class="card-title">${contry.name.common}</h2>
     <p>If a dog chews shoes whose shoes does he choose?</p>
     <div class="card-actions justify-end">
-      <button class="btn btn-primary">See Details</button>
+    <label for="${contry.ccn3}" class="btn btn-primary">open modal</label>
     </div>
   </div>
+
+
+<!-- Put this part before </body> tag -->
+<input type="checkbox" id="${contry.ccn3}" class="modal-toggle" />
+<div class="modal">
+  <div class="modal-box relative">
+    <label for="${contry.ccn3}" class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
+    <h3 class="text-lg font-bold">${contry.name.common}</h3>
+    <p class="py-4">You've been selected for a chance to get one year of subscription to use Wikipedia for free!</p>
+  </div>
+</div>
+  
+</div>
 </div>
 
         `

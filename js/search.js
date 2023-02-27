@@ -22,8 +22,17 @@ const searchByName = (nameContries) => {
 <h2 class="card-title">${nameContries.name}</h2>
 <p>If a dog chews shoes whose shoes does he choose?</p>
 <div class="card-actions justify-end">
-  <button class="btn btn-primary">See Details</button>
+<label for="${nameContries.cca2}" class="btn">open modal</label>
 </div>
+</div>
+
+<input type="checkbox" id="${nameContries.cca2}" class="modal-toggle" />
+<div class="modal">
+  <div class="modal-box relative">
+    <label for="${nameContries.cca2}" class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
+    <h3 class="text-lg font-bold">${nameContries.name}</h3>
+    <p class="py-4">You've been selected for a chance to get one year of subscription to use Wikipedia for free!</p>
+  </div>
 </div>
 </div>
 
@@ -47,7 +56,7 @@ const loadByCapital = () => {
 const searchByCapital = (nameContries) => {
    
 
-    console.log(nameContries);
+    console.log(nameContries.cca2);
     const mainContainer = document.getElementById('mainContainer')
     
     const createDivElement = document.createElement('div')
@@ -60,9 +69,21 @@ const searchByCapital = (nameContries) => {
 <h2 class="card-title">${nameContries.name.common}</h2>
 <p>If a dog chews shoes whose shoes does he choose?</p>
 <div class="card-actions justify-end">
-  <button class="btn btn-primary">See Details</button>
+<label for="${nameContries.cca2}" class="btn">open modal</label>
+
 </div>
 </div>
+
+<input type="checkbox" id="${nameContries.cca2}" class="modal-toggle" />
+<div class="modal">
+  <div class="modal-box relative">
+    <label for="${nameContries.cca2}" class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
+    <h3 class="text-lg font-bold">${nameContries.cca2}</h3>
+    <p class="py-4">You've been selected for a chance to get one year of subscription to use Wikipedia for free!</p>
+  </div>
+</div>
+
+
 </div>
 
     `
